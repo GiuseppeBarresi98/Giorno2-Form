@@ -1,0 +1,35 @@
+<form [formGroup]="registrazione" (ngSubmit)="onSubmit()">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" formControlName="nome" />
+
+  <label for="cognome">Cognome:</label>
+  <input type="text" id="cognome" formControlName="cognome" />
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" formControlName="password" />
+
+  <label for="confermaPassword">Conferma Password:</label>
+  <input
+    type="password"
+    id="confermaPassword"
+    formControlName="confermaPassword"
+  />
+
+  <label for="genere">Genere:</label>
+  <select id="genere" formControlName="genere">
+    <option value="maschio">Maschio</option>
+    <option value="femmina">Femmina</option>
+    <option value="altro">Altro</option>
+  </select>
+
+  <label for="immagineProfilo">Immagine Profilo:</label>
+  <input type="file" id="immagineProfilo" formControlName="immagineProfilo" />
+
+  <label for="biografia">Biografia:</label>
+  <textarea id="biografia" formControlName="biografia"></textarea>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" formControlName="username" />
+
+  <button type="submit">Registrati</button>
+</form>
